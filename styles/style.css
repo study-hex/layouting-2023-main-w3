@@ -1,0 +1,119 @@
+* {
+  outline: 1px solid #f73;
+}
+
+:root {
+  --color-primary: #AA0601;
+  --color-secondary: #FBF2F2;
+  /* --color-Tertiary: ; */
+
+  --color-black: #000000;
+  --color-white: #FFFFFF;
+  --color-darkGray: #212529;
+  --color-lightGray: #CED4DA;
+
+  /* --color-icon: ; */
+
+  --txt-lg: 48px;
+  --txt-base: 24px;
+  --txt-sm: 20px;
+  --txt-xs: 18px;
+  --txt-2xs: 16px;
+}
+
+html,
+body {
+  font-family: 'Roboto', 'Noto Sans TC', -apple-system, BlinkMacSystemFont, "Segoe UI", "Microsoft JhengHei", "Helvetica Neue", Arial, sans-serif;
+  font-size: var(--txt-base);
+  line-height: 1.5;
+}
+
+.container {
+  /* 1920 - 312 - 312 */
+  max-width: 1296px;
+  margin: 0 auto;
+}
+
+.py-4 {
+  padding-top: 16px;
+  padding-bottom: 16px;
+}
+
+.pt-12 {
+  padding-top: 48px;
+}
+
+.pb-8 {
+  padding-bottom: 32px;
+}
+
+.gap-8 {
+  gap: 32px;
+}
+
+.gap-9 {
+  gap: 36px;
+}
+
+.gap-12 {
+  gap: 48px;
+}
+
+.gap-16 {
+  gap: 64px;
+}
+
+
+.theme-primary {
+  color: var(--color-white);
+  background: var(--color-primary);
+}
+
+.font-lg {
+  font-size: var(--txt-lg);
+}
+
+.font-sm {
+  font-size: var(--txt-sm);
+}
+
+.font-xs {
+  font-size: var(--txt-xs);
+}
+
+.font-sm {
+  font-size: var(--txt-sm);
+}
+
+/* end of base */
+
+
+.flex {
+  display: flex;
+}
+
+.justify-between {
+  justify-content: space-between;
+}
+
+.align-center {
+  align-items: center;
+}
+
+/* end of utility */
+
+
+.logo {
+  /* for h1 SEO */
+  background-image: url(https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/week3-4/logo-white.png);
+  background-repeat: no-repeat;
+
+  width: 80px;
+  height: 48.57px;
+
+  /* push away */
+  text-indent: 101%;
+  /* avoid more lines */
+  white-space: nowrap;
+  overflow: hidden;
+}
