@@ -102,10 +102,10 @@ body {
 
 /* end of utility */
 
-
-.logo {
+.h1-logo {
   /* for h1 SEO */
-  background-image: url(https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/week3-4/logo-white.png);
+  background: url(https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/week3-4/logo-white.png) center center;
+  background-size: contain;
   background-repeat: no-repeat;
 
   width: 80px;
@@ -116,4 +116,12 @@ body {
   /* avoid more lines */
   white-space: nowrap;
   overflow: hidden;
+}
+
+.nav {
+  height: 80px;
+}
+
+.main {
+  height: calc(100vh - 80px);
 }
