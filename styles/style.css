@@ -1,5 +1,5 @@
 * {
-  outline: 1px solid #f73;
+  /* outline: 1px solid #f73; */
 }
 
 :root {
@@ -32,6 +32,20 @@ body {
   /* 1920 - 312 - 312 */
   max-width: 1296px;
   margin: 0 auto;
+}
+
+@media (max-width:992px) {
+  .container {
+    max-width: 100%;
+    padding-left: 36px;
+    padding-right: 36px;
+  }
+}
+
+@media (max-width:767px) {
+  .container {
+    padding: 0;
+  }
 }
 
 .py-4 {
@@ -87,6 +101,13 @@ body {
 
 /* end of base */
 
+.w-full {
+  width: 100%;
+}
+
+.fixed {
+  position: fixed;
+}
 
 .flex {
   display: flex;
@@ -98,6 +119,10 @@ body {
 
 .align-center {
   align-items: center;
+}
+
+.text-center {
+  text-align: center;
 }
 
 /* end of utility */
@@ -125,3 +150,44 @@ body {
 .main {
   height: calc(100vh - 80px);
 }
+
+@media (max-width:767px) {
+  .h1-logo {
+    margin-left: 15px;
+  }
+
+  .nav {
+    height: auto;
+  }
+
+  .nav>.container, .nav-list {
+    flex-wrap: wrap;
+  }
+
+  .nav-list {
+    width: 100%;
+    gap: 0px;
+
+    border-top: 1px solid var(--color-white);
+    border-left: 1px solid var(--color-white);
+    border-right: 1px solid var(--color-white);
+  }
+
+  .nav-list-item {
+    width: 49.9%;
+    border-bottom: 1px solid var(--color-white);
+  }
+
+  .nav-list-item>a {
+    display: block;
+
+    padding-top: 12px;
+    padding-bottom: 12px;
+  }
+
+  .nav-list-item:nth-child(odd) {
+    border-right: 1px solid var(--color-white);
+  }
+}
+
+/* end of nav */
