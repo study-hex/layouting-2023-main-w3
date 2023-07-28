@@ -263,6 +263,10 @@ body {
   display: flex;
 }
 
+.flex-col {
+  flex-direction: column;
+}
+
 .flex-wrap {
   flex-wrap: wrap;
 }
@@ -420,7 +424,7 @@ body {
   /* end of RWD-footer */
 }
 
-/* .card-img {
+/* .store-info-card-img {
   width: 526px;
   height: 224px;
 } */
@@ -453,4 +457,23 @@ body {
 .map {
   width: 57%;
   height: 414px;
+
+  @media (max-width:768px) {
+    width: 100%;
+  }
+}
+
+@media (max-width:768px) {
+  .store-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    gap: 24px;
+
+  }
+
+  .store-info>figure, .store-info-card {
+    width: 48%;
+  }
 }
